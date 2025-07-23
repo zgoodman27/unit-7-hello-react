@@ -1,16 +1,20 @@
-import './App.css';
-import Header from './components/Header';
-import Content from './components/Content';
-import Footer from './components/Footer';
+import "./App.css";
+import Header from "./components/Header";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
 
-function App() {
-   return (
-    <main>
+const App = () => {
+  return (
+    <div id="flex-container">
       <Header />
-      <Content />
+      <section>
+        <div id="left-sidebar">Ad 1</div>
+        <Content />
+        <div id="right-sidebar">Ad 2</div>
+      </section>
       <Footer />
-    </main>
+    </div>
   );
-}
+};
 
 export default App;
